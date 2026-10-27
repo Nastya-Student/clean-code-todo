@@ -23,14 +23,14 @@ const createNewTaskElement = function (taskString) {
   const deleteButton = document.createElement('button');
   const deleteButtonImg = document.createElement('img');
 
-  label.innerText = taskString;
+  label.textContent = taskString;
   label.className = 'task';
 
   checkBox.type = 'checkbox';
   editInput.type = 'text';
   editInput.className = 'task';
 
-  editButton.innerText = 'Edit';
+  editButton.textContent = 'Edit';
   editButton.className = 'edit';
 
   deleteButton.className = 'delete';
@@ -63,11 +63,11 @@ const editTask = function () {
   const editBtn = listItem.querySelector('.edit');
   const containsClass = listItem.classList.contains('editMode');
   if (containsClass) {
-    label.innerText = editInput.value;
-    editBtn.innerText = 'Edit';
+    label.textContent = editInput.value;
+    editBtn.textContent = 'Edit';
   } else {
-    editInput.value = label.innerText;
-    editBtn.innerText = 'Save';
+    editInput.value = label.textContent;
+    editBtn.textContent = 'Save';
   }
 
   listItem.classList.toggle('editMode');
