@@ -1,0 +1,35 @@
+{
+  "name": "clean-code-todo",
+  "version": "1.0.0",
+  "description": "rss hometask",
+  "homepage": "https://github.com/Nastya-Student/clean-code-todo#readme",
+  "bugs": {
+    "url": "https://github.com/Nastya-Student/clean-code-todo/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Nastya-Student/clean-code-todo.git"
+  },
+  "license": "ISC",
+  "author": "nastya",
+  "type": "commonjs",
+  "main": "app.js",
+  "scripts": {
+    "test": "test",
+    "lint": "eslint .",
+    "format": "prettier --write .",
+    "prepare": "husky"
+  },
+  "devDependencies": {
+    "@eslint/js": "^10.0.1",
+    "eslint": "^10.13.0",
+    "eslint-config-prettier": "^10.1.8",
+    "globals": "^17.13.0",
+    "husky": "^9.1.7",
+    "lint-staged": "^17.6.0",
+    "prettier": "3.9.10"
+  },
+  "lint-staged": {
+    "**/*": "prettier --check --ignore-unknown"
+  }
+}
